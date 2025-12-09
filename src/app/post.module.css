@@ -1,0 +1,55 @@
+.post {
+  background: white;
+  transition: box-shadow 0.1s ease-in;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.post.unread {
+  border-left: 4px solid #007bff;
+  background-color: #f8f9fa;
+}
+
+.post.important {
+  border-left: 4px solid #ffc107;
+}
+
+.post.important.unread {
+  border-left: 4px solid #dc3545;
+}
+
+.title {
+  margin-top: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.emailHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.importantBadge {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+
+.emailMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.content {
+  line-height: 1.5;
+}
+
+.post:hover {
+  box-shadow: 1px 1px 3px #aaa;
+}
